@@ -15,7 +15,7 @@ def load_films(event):
     for film in films:
         film_tree.insert('', 'end', values=film)
 
-# Connect to the Sakila database
+# Connect to  your desired  database
 conn = mysql.connector.connect(
     host="",
     user="",
@@ -24,7 +24,7 @@ conn = mysql.connector.connect(
 )
 cursor = conn.cursor()
 
-# Queries
+# Queries joins 
 category_query = "SELECT DISTINCT name FROM category ORDER BY name;"
 film_query = """
 SELECT f.title, f.description, f.release_year, f.rating, f.special_features, l.name 
