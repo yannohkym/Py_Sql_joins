@@ -1,5 +1,3 @@
-# Designed by _Student Name
-
 import mysql.connector
 from tkinter import Tk, ttk, Listbox, N, S, E, W, VERTICAL, Y, RIGHT, X, BOTTOM, HORIZONTAL
 
@@ -19,10 +17,10 @@ def load_films(event):
 
 # Connect to the Sakila database
 conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Pass@123",
-    database="sakila"
+    host="",
+    user="",
+    password="",
+    database=""
 )
 cursor = conn.cursor()
 

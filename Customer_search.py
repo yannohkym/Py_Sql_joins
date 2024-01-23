@@ -1,12 +1,10 @@
-#Designed by Student_Name
-
 import tkinter as tk
 from tkinter import ttk, PhotoImage
 import mysql.connector
 
 def get_db_connection():
     # Create and return database connection and cursor
-    conn = mysql.connector.connect(host='localhost', user='root', password='Pass@123', db='sakila1')
+    conn = mysql.connector.connect(host='', user='', password='', db='')
     cursor = conn.cursor()
     return conn, cursor
 
